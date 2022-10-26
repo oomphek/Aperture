@@ -31,7 +31,7 @@ body {
 }
 
 .header {
-	height: 90px;
+	min-height: 90px;
 	background-color: #181818;
 	display: flex;
 	flex-wrap: wrap;
@@ -151,10 +151,38 @@ color: #C0C0C0;
 	}
 	
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
+	.header_menu_text {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+	}
+}
+@media screen and (max-width: 580px) {
+	.header_menu_text {
+margin-left: -30px;
+	}
+	.header_logo {
+		margin-left: 20px;
+
+	}
+	.header_menu>ul {
+		margin-right: 10px;
+		margin-left: 10px;
+		padding-left: 10px;
+		column-gap: 5px;
+		flex: 1 1 100%;
+	}
 	.what_positionq {
-		margin-left: -50px;
-		width: 50%
+		margin-top: -250px;
+	}		
+	.what_positionw {
+		margin-top: -290px;
+
+	}
+	.what_positione {
+				margin-top: -290px;
+
 	}
 	.what_picq {
 		width: 350px;
@@ -167,6 +195,9 @@ color: #C0C0C0;
 	.what_pice {
 		width: 350px;
 		padding-bottom: 100px;
+	}
+	.what_second_text {
+		max-width: 300px;
 	}
 }
 .what_positionq {
@@ -313,6 +344,7 @@ color: #C0C0C0;
 .tool_app {
 	display: flex;
 	flex-wrap: wrap;
+	min-height: 540px;
 }
 .tool {
 	background-color: #000;
@@ -524,4 +556,26 @@ margin-bottom: 40px;
 .social {
 	display: flex;
 	column-gap: 20px;
+}
+
+@media screen and (max-width: 400px) {
+.global {
+	margin-right: 10px;
+	margin-left: 10px;
+
+}
+
+.header_logo {
+	margin-left: 10px;
+}
+.header>ul {
+	margin-right: 10px;
+}
+.header_menu_text {
+	margin-left: -40px;
+}
+.header {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
 }
